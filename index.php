@@ -103,7 +103,7 @@ switch($action) {
 $rooms = room_lastUpdated(".", basename($DUMMY_CONFIG["db"]["db_path"]));
 $nmax = 10;
 $nmaxinit = $nmax;
-$gmtime = gmmktime();
+$gmtime = time();
 echo "        <ul>\n";
 foreach($rooms AS $n => $room_info) {
   if($nmax > 0 || $display_all_rooms) {
